@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style.css"/>
+		<title>Game History</title>
+		
+		<script>
+		
+			function myFunction () {
+				var x = document.getElementById("myTopNav");
+				if (x.className === "navbar") {
+					x.className += " responsive";
+				} 	
+				else {
+					x.className = "navbar";
+				}
+			}
+
+		</script>
+	</head>
+	
+	<body>
+		<div class="inviswrapper">
+			<div class="headerbox">
+				<a href="../index.html"><img src="../images/osucustomlogo.png" id="logopic"/></a>
+				<h1>The best music rhythm game ;)</h1>
+			</div>
+			
+			<div class="navbar" id="myTopNav">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				<a href="../index.html" class="NotActive">Home Page</a>
+				<a href="gamemodes.html" class="NotActive">Game Modes</a>
+				<a href="history.html" class="active">Osu! History</a>
+				<a href="leaderboards.html" class="NotActive">Leaderboards</a>
+			</div>
+			
+			<div class="mainpagebox">
+				<center>
+				<div class="innerpagebox">
+					<h1>The history of Osu!:</h1>
+					<p>Osu! has had various changes throughout the years, mainly consisting of interface updates and improved overall quality of the game's aesthetics.  The game was officially released for the PC-Platform on September 16, 2007.  It originally had one game mode before the summer of 2008: single-player.  On June 3, 2008, multi-player was added and allowed players to host lobbies and play competitively or for fun with other osu! players.  This later inspired the creation of a mini yearly tournament called the "osu! world cup."  Professional players would compete for their country (usually consisting of a team) in order to win the cup.  On August 28, 2016, osu!'s source code was open-sourced under the MIT License; The project was dubbed "Lazer" (osu! lazer) and aims to increase osu!'s availability to more platforms and provide transparency.  The community, as of January 27, 2018, has gained over 11.43 million registered users and 7.47 billion ranked plays.</p>
+				</div>
+				
+				<div class="innergallerybox">
+				<h1>Gallery</h1>
+				
+					<div class="mySlides">
+						<img src="../images/osugallery1.jpg" id="galpic1" style="width:100%;"/>
+					</div>
+					<div class="mySlides">
+						<img src="../images/osugallery2.jpg" id="galpic2" style="width:100%;"/>
+					</div>
+					<div class="mySlides">
+						<img src="../images/osugallery3.jpg" id="galpic3" style="width:100%;"/>
+					</div>
+					<div class="mySlides">
+						<img src="../images/osugallery4.jpg" id="galpic4" style="width:100%;"/>
+					</div>
+					<div class="mySlides">
+						<img src="../images/osugallery5.jpg" id="galpic5" style="width:100%;"/>
+					</div>
+					
+					<a class="previous" onclick="plusPic(-1)">&#10094;</a>
+					<a class="next" onclick="plusPic(1)">&#10095;</a>
+				</div>
+				
+				<script src="../java.js"></script>
+				
+				</center>
+			</div>
+		</div>
+	</body>
+</html>

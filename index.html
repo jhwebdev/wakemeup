@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"/>
+		<title>Wake me up</title>
+		
+		<script>
+		
+			function myFunction () {
+				var x = document.getElementById("myTopNav");
+				if (x.className === "navbar") {
+					x.className += " responsive";
+				} 	
+				else {
+					x.className = "navbar";
+				}
+			}
+
+		</script>
+	</head>
+	
+	<body>
+		<div class="inviswrapperindex">
+			<div class="headerbox">
+				<a href="index.html"><img src="images/osucustomlogo.png" id="logopic"/></a>
+				<h1>The best music rhythm game ;)</h1>
+			</div>
+			
+			<div class="navbar" id="myTopNav">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				<a href="index.html" class="active">Home Page</a>
+				<a href="pages/gamemodes.html" class="NotActive">Game Modes</a>
+				<a href="pages/history.html" class="NotActive">Osu! History</a>
+				<a href="pages/leaderboards.html" class="NotActive">Leaderboards</a>
+			</div>
+			
+			<div class="mainindexbox">
+				<center>
+				<div class="innerindexbox">
+					<h1>About Osu!:</h1>
+					<p>Osu! is a music rhythm game developed and published by Australia-based company Ppy Pty Ltd.  It contains four different game modes, each with their own specific leaderboards and provides a different experience for the player.  It was originally released for Microsoft Windows on September 16, 2007 and its gameplay has drastically changed since then.  The community is free to create "beatmaps" which are essentially the songs you play in the game.  These can be downloaded on the official website under its respected section.  Professional players are constantly breaking old records and will continue to do so for as long as they play which only encourages others to do the same.  The player base has stayed consistent ever since its release and it's this dedicated fan base that has helped preserve the game over the past decade.</p>
+				</div>
+				</center>
+			</div>
+			
+			<div class="sideboxcontainer">
+				<div class="sideboxes">
+					<div class="innersidebox1">
+						<h1 id="1stsideboxh">My Osu! profile:</h1>
+						<center>
+							<a href="https://osu.ppy.sh/users/10017902"><img src="images/osuprofpic.png" id="profpic"/></a>
+							<p id="profilepara">Click on the picture above to view profile (if you're interested).</p>
+						</center>
+					</div>
+				</div>
+				
+				<div class="sideboxes">
+					<div class="innersidebox2">
+						<h1 id="2ndsideboxh">YouTube Videos:</h1>
+						<div class="YTcontainer">
+							<div class="YTcolumnL">
+								<p>osu! standard:</p>
+								<a href="https://www.youtube.com/watch?v=VsYLIg67pYo"><img src="images/YTfreedivelinkpic.jpg" id="freedivethumbnail"/></a>
+								<a href="https://www.youtube.com/watch?v=blHvgsGSUC8"><img src="images/YTmonobflypic.jpg" id="monobflythumbnail"/></a>
+							</div>
+							
+							<div class="YTcolumnR">
+								<p>osu! mania:</p>
+								<a href="https://www.youtube.com/watch?v=BPo59AJyShE"><img src="images/YTfoolmoonpic.jpg" id="foolmoonthumbnail"/></a>
+								<a href="https://www.youtube.com/watch?v=EN090FsiNMk"><img src="images/YTascendheavenpic.jpg" id="ascendheaventhumbnail"/></a>
+							</div>
+						</div>
+					
+						<center>
+							<p id="sideboxesparabot">These are highlights of four of the best plays in osu! history.</p>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

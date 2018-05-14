@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style.css"/>
+		<title>Game Modes</title>
+		
+		<script>
+		
+			function myFunction () {
+				var x = document.getElementById("myTopNav");
+				if (x.className === "navbar") {
+					x.className += " responsive";
+				} 	
+				else {
+					x.className = "navbar";
+				}
+			}
+
+		</script>
+	</head>
+	
+	<body>
+		<div class="inviswrapper">
+			<div class="headerbox">
+				<a href="../index.html"><img src="../images/osucustomlogo.png" id="logopic"/></a>
+				<h1>The best music rhythm game ;)</h1>
+			</div>
+			
+			<div class="navbar" id="myTopNav">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				<a href="../index.html" class="NotActive">Home Page</a>
+				<a href="gamemodes.html" class="active">Game Modes</a>
+				<a href="history.html" class="NotActive">Osu! History</a>
+				<a href="leaderboards.html" class="NotActive">Leaderboards</a>
+			</div>
+			
+			<div class="mainpagebox">
+				<center>
+				<div class="innerpagebox">
+					<h1>Game modes in Osu!:</h1>
+					<p>Osu! currently has four different game modes available to the community.</p>
+					
+					<div class="modelist">
+						<ul>Osu! standard <img src="../images/osustandardblack.png" class="regularmodelogo"/>:</br>
+						<p>Osu! standard elements include hit circles, sliders, and spinners.  Hit circles, also known as notes, are a common object on nearly every beatmap. When a hit circle appears, a ring, called the approach circle, will appear around it and begin to shrink. In order to score points from a hit circle, players must place their cursor over the circle and click the hit button as the approach circle closes and disappears under the hit circle.  Sliders appear as two hit circles with a solid path, called a slider track, between them.  As with hit circles, an approach circle appears at the beginning of a slider track, which must be clicked when the approach circle touches its edge. Unlike hit circles, however, after the start of a slider has been hit, a ball, called the slider ball, will begin to roll along the slider track, and players must continue to hold down the hit button and keep their cursor hovered over or near the slider ball until it has reached the end of the slider. Sometimes a slider end will have an arrow, called the reverse arrow, which means the player will be required to follow the slider ball back to its starting point.</p></ul>
+						<ul>Osu! mania <img src="../images/osumaniablack.png" class="regularmodelogo"/>:</br>
+						<p>Osu! mania is a mode similar to piano tiles where players need to press keys bound to several columns according to the music.  As the music plays, notes are falling from the top of the screen in several columns whose number depends on the map.  As a note reaches the bottom row of some column, the player is expected to press the key bound to that column to clear the note, similar to playing guitar or bass in Rock Band or Guitar Hero.</p></ul>
+						<ul>Osu! taiko <img src="../images/osutaikoblack.png" class="regularmodelogo"/>:</br>
+						<p>The Taiko mode involves hitting drums to the beat of a music piece.  Taiko mode does not require the use of the cursor except for browsing the beatmap list and the pause menu; it only requires clicking which can be done with either a keyboard or a mouse.  When playing the Taiko mode, red and blue beats, as well as long yellow drumrolls (with an appearance similar to a slider) will scroll across the screen – the player gets more points for the more hits they can achieve.</p></ul>
+						<ul>Osu! catch the beat <img src="../images/osuctbblack2.png" class="irregularmodelogo"/>:</br>
+						<p>Catch the Beat puts the player in control of a character (named Yuzu) holding a plate above their head, with the objective of catching fruits falling from the top of the screen. Regular beats on a map are converted simply to fruit falling straight down. Sliders have one fruit at each end of the slider and a trail of juice drops leading between the ends. Large juice drops are the equivalent of hit circles, while small drops add extra points to the score and affect accuracy. Spinners become fruit falling en masse from the top of the screen; the player does not need to catch all of the fruit, although catching more fruit will earn them more points.</p></ul>
+					</div>
+				</div>
+				</center>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,432 @@
+body {
+	margin: auto;
+	/*background-color: #A29B9A;*/
+	font-family: Century Gothic;
+}
+
+.inviswrapperindex {
+	display: grid;
+	grid-template-columns: 71% 29%;
+	grid-template-rows: auto;
+	grid-template-areas: "header header" "nav nav" "left-c right-c" "left-c right-c";
+}
+
+.inviswrapper {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-template-areas: "header" "nav" "content";
+}
+
+/*Header*/
+.headerbox {
+	display: flex;
+	grid-area: header;
+	align-items: center;
+	justify-content: center;
+}
+
+.headerbox h1 {
+	padding-left: 20px;
+	font-size: 3.92857em;
+}
+
+#logopic {
+	padding-top: 1.25em;
+	width: 91.5px;
+	height: 104px;
+}
+
+/*Navbar*/
+.navbar {
+	display: flex;
+	justify-content: center;
+	grid-area: nav;
+	border-top: 0.5pt solid #d9d9d9;
+	border-bottom: 0.5pt solid #d9d9d9;
+	align-items: center;
+}
+
+.navbar a {
+	font-size: 35pt;
+	text-decoration: none;
+	color: black;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.navbar a:hover {
+	color: white;
+	background-color: black;
+}
+
+a.active {
+	color: white;
+	background-color: black;
+}
+
+.navbar .icon {
+	display: none;
+}
+
+/*Left-Content Page 1*/
+.mainindexbox {
+	grid-area: left-c;
+	background-color: #d9d9d9;
+}
+
+.innerindexbox {
+	background-color: white;
+	width: 98%;
+	height: 98%;
+}
+
+.mainindexbox h1 {
+	/*margin-top: 20px;*/
+	font-size: 70pt;
+}
+
+.mainindexbox p {
+	margin-top: -50px;
+	font-size: 25pt;
+}
+
+/*Right-Content Page 1*/
+.sideboxcontainer {
+	grid-area: right-c;
+	display: flex;
+	flex-direction: column;
+	background-color: #d9d9d9;
+}
+
+.innersidebox1, .innersidebox2 {
+	width: 98%;
+	height: 98%;
+	background-color: white;
+}
+
+.sideboxes h1 {
+	padding-left: 10px;
+}
+
+.innersidebox1 h1 {
+	margin-top: 62px;
+}
+
+.innersidebox2 h1 {
+	margin-top: 10px;
+}
+
+#profilepara {
+	margin-top: -0.5px;
+	padding-bottom: 10px;
+}
+
+.YTcontainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.YTcolumnL {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.YTcolumnR {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.sideboxes p {
+	margin-top: -10px;
+	margin-bottom: -2px;
+	margin-left: 30px;
+}
+
+#sideboxesparabot {
+	margin-top: -0.5px;
+	padding-bottom: 10px;
+}
+
+#profpic, #freedivethumbnail, #monobflythumbnail, #foolmoonthumbnail, #ascendheaventhumbnail {
+	border: 3pt solid white;
+}
+
+#profpic:hover, #freedivethumbnail:hover, #monobflythumbnail:hover, #foolmoonthumbnail:hover, #ascendheaventhumbnail:hover {
+	border-color: #666699;
+}
+
+#freedivethumbnail, #monobflythumbnail, #foolmoonthumbnail, #ascendheaventhumbnail {
+	margin-left: 30px;
+	width: 75%;
+	height: 25%;
+}
+
+/*Content Page 2 3 4*/
+.mainpagebox {
+	grid-area: content;
+	background-color: #d9d9d9;
+}
+
+.innerpagebox {
+	width: 98%;
+	height: 98%;
+	background-color: white;
+}
+
+.mainpagebox h1 {
+	font-size: 70pt;
+}
+
+.mainpagebox p {
+	margin-top: -30px;
+	font-size: 25pt;
+}
+
+/*Modes Page 2*/
+.modelist p {
+	font-size: 25pt;
+	margin-top: 10px;
+}
+
+.modelist ul {
+	font-size: 32pt;
+	padding-left: 30px;
+}
+
+.regularmodelogo {
+	width: 32pt;
+	height: 32pt;
+	/*transform: translateY(+14%);*/
+}
+
+.irregularmodelogo {
+	width: 32pt;
+	height: 32pt;
+	/*transform: translateY(+14.2%);*/
+}
+
+/*History Page 3*/
+.innergallerybox {
+	background-color: white;
+	width: 98%;
+	height: 98%;
+	position: relative;
+	margin: auto;
+}
+
+.innergallerybox h1 {
+	margin-top: 10px;
+	padding-left: 10px;
+	font-size: 25pt;
+}
+
+.mySlides {
+	display: none;
+}
+
+.previous, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	align-items: center;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.previous {
+	left: 0;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+	background-color: white;
+	color: black;
+}
+
+/*Leaderboards Page 4*/
+.lboards {
+	display: flex;
+	justify-content: center;
+}
+
+.standardboard {
+	vertical-align: top;
+	margin-left: 1.875em;
+	margin-right: 0.9375em;
+}
+
+.maniaboard {
+	vertical-align: top;
+	margin-left: 0.9375em;
+	margin-right: 1.875em;
+}
+
+.lboards a {
+	text-decoration: none;
+	font-size: 25pt;
+	color: black;
+}
+
+.lboards a:hover {
+	color: #666699;
+}
+
+.lboards p {
+	margin-bottom: -0.125em;
+}
+
+.lboards ul {
+	margin-top: -0.00625em;
+	font-size: 0.75em;
+}
+
+table {
+	padding-left: 1.875em;
+	border-collapse: collapse;
+}
+
+table tr, td, th {
+	border: 5pt solid black;
+	text-align: center;
+	padding-left: 0.3125em;
+	padding-right: 0.3125em;
+}
+
+/*Mobile Adjustments*/
+@media only screen and (max-width: 865px) {
+	/*Home Page*/
+	.inviswrapperindex {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: "header" "nav" "left-c" "right-c";
+	}
+	
+	/*Other Pages*/
+	.inviswrapper {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: "header" "nav" "main-c";
+	}
+	
+	/*Header*/
+	.headerbox {
+		grid-area: header;
+		padding: none;
+	}
+	
+	.headerbox h1 {
+		font-size: 1.875em;
+	}
+	
+	#logopic {
+		width: 3.92857em;
+		height: 3.92857em;
+	}
+	
+	/*Navbar and Hamburger Menu*/
+	.navbar {
+		grid-area: nav;
+		justify-content: left;
+	}
+	
+	.navbar a {
+		font-size: 1.875em;
+		order: 2;
+	}
+	
+	a.active {
+		color: black;
+		background-color: white;
+	}
+	
+	a.NotActive {
+		display: none;
+	}
+	
+	.navbar a.icon {
+		display: block;
+	}
+	
+	.navbar.responsive {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: stretch;
+	}
+	
+	.navbar.responsive a {
+		display: block;
+	}
+	
+	.navbar.responsive a:hover {
+		background-color: black;
+	}
+	
+	/*Left Content (Home Page)*/
+	.mainindexbox {
+		grid-area: left-c;
+	}
+	
+	.mainindexbox h1 {
+		font-size: 50px;
+	}
+	
+	.mainindexbox p {
+		font-size: 1.2em;
+		margin-top: -20px;
+	}
+	
+	/*Right Content (Home Page)*/
+	.sideboxcontainer {
+		grid-area: right-c;
+	}
+	
+	.innersidebox {
+		margin-left: 4.5px;
+	}
+	
+	/*Main Content (Other Pages)*/
+	.mainpagebox {
+		grid-area: main-c;
+	}
+	
+	.mainpagebox h1 {
+		font-size: 50px;
+	}
+	
+	.mainpagebox p {
+		font-size: 1.2em;
+	}
+	
+	.modelist p {
+		font-size: 13.5pt;
+	}
+	
+	.modelist ul {
+		font-size: 1.875em;
+	}
+	
+	/*Leaderboards*/
+	.lboards {
+		flex-direction: column;
+	}
+	
+	.maniaboard {
+		padding-top: 40px;
+		margin-left: 1.875em;
+		margin-right: 0.9375em;
+	}
+}
