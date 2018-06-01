@@ -1,6 +1,5 @@
 body {
 	margin: auto;
-	/*background-color: #A29B9A;*/
 	font-family: Century Gothic;
 }
 
@@ -45,14 +44,16 @@ body {
 	border-top: 0.5pt solid #d9d9d9;
 	border-bottom: 0.5pt solid #d9d9d9;
 	align-items: center;
+	overflow: hidden;
 }
 
-.navbar a {
+.navbar a, .dropdown a, .dropdownContent a {
 	font-size: 35pt;
 	text-decoration: none;
 	color: black;
 	padding-left: 40px;
 	padding-right: 40px;
+	transition:0.2s ease-in;
 }
 
 .navbar a:hover {
@@ -82,12 +83,11 @@ a.active {
 }
 
 .mainindexbox h1 {
-	/*margin-top: 20px;*/
-	font-size: 70pt;
+	font-size: 3.92857em;
 }
 
 .mainindexbox p {
-	margin-top: -50px;
+	margin-top: -30px;
 	font-size: 25pt;
 }
 
@@ -110,7 +110,7 @@ a.active {
 }
 
 .innersidebox1 h1 {
-	margin-top: 62px;
+	margin-top: 42px;
 }
 
 .innersidebox2 h1 {
@@ -156,6 +156,7 @@ a.active {
 
 #profpic:hover, #freedivethumbnail:hover, #monobflythumbnail:hover, #foolmoonthumbnail:hover, #ascendheaventhumbnail:hover {
 	border-color: #666699;
+	transition: 0.2s ease-in;
 }
 
 #freedivethumbnail, #monobflythumbnail, #foolmoonthumbnail, #ascendheaventhumbnail {
@@ -177,7 +178,7 @@ a.active {
 }
 
 .mainpagebox h1 {
-	font-size: 70pt;
+	font-size: 3.92857em;
 }
 
 .mainpagebox p {
@@ -199,13 +200,16 @@ a.active {
 .regularmodelogo {
 	width: 32pt;
 	height: 32pt;
-	/*transform: translateY(+14%);*/
 }
 
 .irregularmodelogo {
 	width: 32pt;
 	height: 32pt;
-	/*transform: translateY(+14.2%);*/
+}
+
+#gotoTop {
+	color: blue;
+	text-decoration: none;
 }
 
 /*History Page 3*/
@@ -223,8 +227,15 @@ a.active {
 	font-size: 25pt;
 }
 
+@keyframes slide {
+	from {left: -100px; opacity: 0;}
+	to {left: 0; opacity: 1;}
+}
+
 .mySlides {
 	display: none;
+	animation-name: slide;
+	animation-duration: 0.5s;
 }
 
 .previous, .next {
@@ -279,8 +290,9 @@ a.active {
 	color: black;
 }
 
-.lboards a:hover {
+.lboards a:hover, .standardboard td:hover, .maniaboard td:hover {
 	color: #666699;
+	transition: 0.2s ease-in;
 }
 
 .lboards p {
@@ -305,7 +317,7 @@ table tr, td, th {
 }
 
 /*Mobile Adjustments*/
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width: 1000px) {
 	/*Home Page*/
 	.inviswrapperindex {
 		display: grid;
@@ -341,6 +353,7 @@ table tr, td, th {
 	.navbar {
 		grid-area: nav;
 		justify-content: left;
+		padding: 0;
 	}
 	
 	.navbar a {
